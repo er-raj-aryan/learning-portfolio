@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:brown;
+    height:10vh;
+}
+
+.navbar-left-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    
+}
+.navbar-divide{
+    height:25px;
+}
+
+.navbar-left-list-item{
+    color:rgb(246, 246, 246);
+    margin:10px;
+}
+
+.navbar-right-item{
+    padding:10px;
+    background-color: rgb(235, 232, 232);
+    border: 1px solid rgb(255, 252, 252);
+    border-radius: 30px;
+    cursor:pointer;
+}
+
