@@ -1,15 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* italic font font-family: 'Lobster', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+/* font-family: 'Ephesis', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+/*font-family: 'Birthstone', cursive; */
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
+.navbar-section{
+    position: fixed;
+    width: 100%;
+}
+
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color:brown;
     height:10vh;
+    padding:15px;
+}
+
+.navbar-left{
+    padding:20px;
+}
+
+.navbar-right{
+    padding:20px;
+}
+
+.navbar-left-list-logo{
+    font-family: 'Lobster', cursive;
+    color:#fedc9f;
+    font-size:xx-large;
 }
 
 .navbar-left-list{
@@ -17,23 +46,82 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    
-    
+    font-size:large;
+    font-family: 'Gemunu Libre', sans-serif;  
 }
+
 .navbar-divide{
     height:25px;
 }
 
 .navbar-left-list-item{
-    color:rgb(246, 246, 246);
+    color:#fedc9f;
     margin:10px;
+    font-size: 20px;
 }
 
 .navbar-right-item{
-    padding:10px;
-    background-color: rgb(235, 232, 232);
-    border: 1px solid rgb(255, 252, 252);
+    padding:8px;
+    background-color: rgb(248 177 94);
+    border: none;
     border-radius: 30px;
+    color:#fedc9f;
     cursor:pointer;
+    font-size:large;
+    font-family: 'Gemunu Libre', sans-serif;  
 }
 
+.home-section{
+    background: radial-gradient(circle, rgba(244,237,229,1) 2%, rgba(245,164,18,1) 46%, rgba(250,161,0,1) 97%);;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding:20px;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.home-left{
+    padding: 20px;
+    flex:0.7;
+    color: #fedc9f;
+    text-shadow:  6px 7px 20px rgb(0 0 0 / 50%);
+}
+.home-right{
+    padding: 20px;
+    
+}
+
+.home-left > h1{
+    font-family: 'Ephesis', cursive;
+    font-size: 60px;
+}
+.home-left > p{
+    font-family: 'Birthstone', cursive;
+    font-size: 25px;
+}
+.home-left > button{
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    background-color: #fedc9f;
+    border-radius: 0px 20px 0px;
+    margin: 10px 0px;
+    color: #f9a205;
+    /* box-shadow: 6px 7px 20px rgb(0 0 0 / 50%); */
+}
+
+.home-img{
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0px 20px 20px 100px;
+    box-shadow: 6px 7px 20px rgb(0 0 0 / 50%);
+}
